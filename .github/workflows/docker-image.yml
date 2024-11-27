@@ -24,7 +24,7 @@ jobs:
     - run: pwd
     - name: Save Docker image to tar file
       run: docker save $IMG -o out/$OUTPUT
-    - name: touch out
+    - run: touch out
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
