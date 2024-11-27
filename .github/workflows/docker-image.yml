@@ -19,10 +19,11 @@ jobs:
     - name: PULL IMAGE 
       run: docker pull $IMG
     - name: Save Docker image to tar file
-      run: docker save $IMG -o $IMG.tar
+      run: docker save $IMG -o out/$IMG.tar
+
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
           name: $IMG.tar
-          path: /
+          path: out
 
