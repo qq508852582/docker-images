@@ -8,6 +8,7 @@ on:
     
 env: 
   IMG: nginx:alpine
+  OUTPUT: nginx_alpine.tar
 jobs:
 
   build:
@@ -22,7 +23,7 @@ jobs:
     - run: ls
     - run: pwd
     - name: Save Docker image to tar file
-      run: docker save $IMG -o out/$IMG.tar
+      run: docker save $IMG -o out/$OUTPUT
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
