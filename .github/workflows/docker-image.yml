@@ -18,6 +18,9 @@ jobs:
     - uses: actions/checkout@v4
     - name: PULL IMAGE 
       run: docker pull $IMG
+    - run: mkdir out
+    - run: ls
+    - run: pwd
     - name: Save Docker image to tar file
       run: docker save $IMG -o out/$IMG.tar
 
