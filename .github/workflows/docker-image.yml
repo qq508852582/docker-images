@@ -7,8 +7,8 @@ on:
     branches: [ "master" ]
     
 env: 
-  IMG: openjdk:21-ea-oraclelinux7
-  OUTPUT: openjdk21.tar
+  IMG: redis:7.4.1
+  OUTPUT: redis741.tar
 jobs:
 
   build:
