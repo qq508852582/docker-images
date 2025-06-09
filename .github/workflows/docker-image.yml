@@ -8,7 +8,7 @@ on:
     
 env: 
   IMG: node:18-alpine 
-  OUTPUT: node:18-alpine .tar
+  OUTPUT: node:18-alpine.tar
 jobs:
 
   build:
