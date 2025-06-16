@@ -7,8 +7,8 @@ on:
     branches: [ "master" ]
     
 env: 
-  IMG: node:18-alpine 
-  OUTPUT: node-18-alpine.tar
+  IMG: redis/redis-stack-server:6.2.6-v17
+  OUTPUT: redis-stack-server.tar
 jobs:
 
   build:
